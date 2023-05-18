@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
 			  require("nvim-tree").setup {}
 		  end
 	  }
-	  use {'romgrk/barbar.nvim', requires = {
+	  use {'romgrk/barbar.nvim', requires = {packerpacker
 		  'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
 		  'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
 	  }}
@@ -54,4 +54,5 @@ return require('packer').startup(function(use)
 	  require("toggleterm").setup()
   end}
   use {"tpope/vim-fugitive"}
+  use {"github/copilot.vim"}
   end)
